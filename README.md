@@ -11,3 +11,8 @@ This repository contains a Proof of Concept (POC) project that demonstrates how 
 ## Dependencies
 - IGListKit
 - KingFisher
+
+
+## Screenshots
+
+https://github.com/jhrasco-ct/IGListKit-POC/assets/89834420/49ba4023-bc37-47f3-bdad-8949cf0f3971
