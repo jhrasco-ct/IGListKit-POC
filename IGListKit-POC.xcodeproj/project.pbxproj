@@ -16,8 +16,8 @@
 		9F37EE7D2A0B84C300167851 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE7C2A0B84C300167851 /* Photo.swift */; };
 		9F37EE7F2A0B92A600167851 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE7E2A0B92A600167851 /* Album.swift */; };
 		9F37EE822A0B990300167851 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE812A0B990300167851 /* PhotoListView.swift */; };
+		9F9A3C8E2A0DBEE900012D6B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9A3C8D2A0DBEE900012D6B /* Nuke */; };
 		9FC2986A2A0C7DAC00F2C37E /* AlbumCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC298692A0C7DAC00F2C37E /* AlbumCollectionCell.swift */; };
-		9FC2986D2A0C7ECC00F2C37E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9FC2986C2A0C7ECC00F2C37E /* Kingfisher */; };
 		9FC2986F2A0C8E3F00F2C37E /* PhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2986E2A0C8E3F00F2C37E /* PhotoCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,7 @@
 		9F37EE7C2A0B84C300167851 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		9F37EE7E2A0B92A600167851 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		9F37EE812A0B990300167851 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		9F9A3C8F2A0DC01600012D6B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9FC298692A0C7DAC00F2C37E /* AlbumCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionCell.swift; sourceTree = "<group>"; };
 		9FC2986E2A0C8E3F00F2C37E /* PhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC2986D2A0C7ECC00F2C37E /* Kingfisher in Frameworks */,
+				9F9A3C8E2A0DBEE900012D6B /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				9F37EE632A0B828C00167851 /* IGListKit-POC */,
+				9F9A3C8F2A0DC01600012D6B /* README.md */,
 				9F37EE622A0B828C00167851 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,7 +135,7 @@
 			);
 			name = "IGListKit-POC";
 			packageProductDependencies = (
-				9FC2986C2A0C7ECC00F2C37E /* Kingfisher */,
+				9F9A3C8D2A0DBEE900012D6B /* Nuke */,
 			);
 			productName = "IGListKit-POC";
 			productReference = 9F37EE612A0B828C00167851 /* IGListKit-POC.app */;
@@ -164,7 +166,7 @@
 			);
 			mainGroup = 9F37EE582A0B828C00167851;
 			packageReferences = (
-				9FC2986B2A0C7ECC00F2C37E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 9F37EE622A0B828C00167851 /* Products */;
 			projectDirPath = "";
@@ -416,21 +418,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9FC2986B2A0C7ECC00F2C37E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			repositoryURL = "https://github.com/kean/Nuke";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				minimumVersion = 9.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9FC2986C2A0C7ECC00F2C37E /* Kingfisher */ = {
+		9F9A3C8D2A0DBEE900012D6B /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FC2986B2A0C7ECC00F2C37E /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = 9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

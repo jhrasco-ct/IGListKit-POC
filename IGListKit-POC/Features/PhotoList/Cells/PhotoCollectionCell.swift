@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+import Nuke
 
 class PhotoCollectionCell: UICollectionViewCell {
   static let reuseIdentifier = String(describing: PhotoCollectionCell.self)
@@ -38,7 +38,7 @@ class PhotoCollectionCell: UICollectionViewCell {
 
   var imageURL: URL? {
     didSet {
-      imageView.kf.setImage(with: imageURL)
+      loadImage(url: imageURL)
     }
   }
 
@@ -55,5 +55,14 @@ class PhotoCollectionCell: UICollectionViewCell {
       imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
       imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
     ])
+  }
+
+  private func loadImage(url: URL?) {
+    guard let url else {
+      imageView.image = nil
+      return
+    }
+    let options = ImageLoadingOptions(transition: .fadeIn(duration: 0.2))
+    Nuke.loadImage(with: url, options: options, into: imageView)
   }
 }
