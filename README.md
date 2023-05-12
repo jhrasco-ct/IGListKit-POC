@@ -15,4 +15,4 @@ This repository contains a Proof of Concept (POC) project that demonstrates how 
 
 ## Screenshots
 
-https://github.com/jhrasco-ct/IGListKit-POC/assets/89834420/49ba4023-bc37-47f3-bdad-8949cf0f3971
+https://github.com/jhrasco-ct/IGListKit-POC/assets/89834420/8707e32b-2c96-46c1-bd0c-68ec3501fe1f
