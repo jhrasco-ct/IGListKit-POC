@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "iglistkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Instagram/IGListKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f4afe0d84ad9af676ec545d1c58f6202716d15a8"
+      }
+    },
+    {
       "identity" : "nuke",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kean/Nuke",

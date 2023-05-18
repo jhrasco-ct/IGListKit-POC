@@ -5,11 +5,18 @@
 //  Created by John Harold Rasco on 5/10/23.
 //
 
-import Foundation
+import IGListKit
 
-struct Album {
+class Album {
+//  private let identifier: String = UUID().uuidString
+
   var title: String
   var photos = [Photo]()
+
+  init(title: String, photos: [Photo] = [Photo]()) {
+    self.title = title
+    self.photos = photos
+  }
 }
 
 extension Album {
@@ -24,3 +31,16 @@ extension Album {
     ]
   }
 }
+
+//extension Album: ListDiffable {
+//  func diffIdentifier() -> NSObjectProtocol {
+//    return identifier as NSString
+//  }
+//
+//  func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+//    guard let object = object as? Album else {
+//      return false
+//    }
+//    return self.identifier == object.identifier
+//  }
+//}

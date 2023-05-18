@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import IGListKit
 
 protocol PhotoListViewModelType {
   // Properties
@@ -29,6 +30,8 @@ class PhotoListViewModel: PhotoListViewModelType {
   init() {
     loadAlbums()
   }
+
+  private let identifier: String = UUID().uuidString
 
   var albums = [Album]()
   var selectedAlbumIndex: Int?
@@ -67,5 +70,18 @@ class PhotoListViewModel: PhotoListViewModelType {
   private func loadAlbums() {
     albums = Album.dummies()
     selectedAlbumIndex = albums.isEmpty ? nil : 0
+  }
+}
+
+extension PhotoListViewModel: ListDiffable {
+  func diffIdentifier() -> NSObjectProtocol {
+    return identifier as NSString
+  }
+
+  func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+    guard let object = object as? PhotoListViewModel else {
+      return false
+    }
+    return self.identifier == object.identifier
   }
 }

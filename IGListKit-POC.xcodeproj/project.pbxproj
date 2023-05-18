@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9703E5D02A14BB7D0044146E /* PhotoIGListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703E5CF2A14BB7D0044146E /* PhotoIGListViewController.swift */; };
+		9703E5D22A14C6F60044146E /* PhotoListSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703E5D12A14C6F60044146E /* PhotoListSectionController.swift */; };
+		9703E5D52A15CF550044146E /* AlbumListSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703E5D42A15CF550044146E /* AlbumListSectionController.swift */; };
+		97E4AB022A133A3300AF8821 /* IGListDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97E4AB012A133A3300AF8821 /* IGListDiffKit */; };
+		97E4AB042A133A3300AF8821 /* IGListKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97E4AB032A133A3300AF8821 /* IGListKit */; };
+		97E4AB062A133A3300AF8821 /* IGListSwiftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97E4AB052A133A3300AF8821 /* IGListSwiftKit */; };
+		97E4AB082A13787C00AF8821 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4AB072A13787C00AF8821 /* MainViewController.swift */; };
 		9F37EE652A0B828C00167851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE642A0B828C00167851 /* AppDelegate.swift */; };
 		9F37EE672A0B828C00167851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE662A0B828C00167851 /* SceneDelegate.swift */; };
 		9F37EE692A0B828C00167851 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37EE682A0B828C00167851 /* PhotoListViewController.swift */; };
@@ -22,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9703E5CF2A14BB7D0044146E /* PhotoIGListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIGListViewController.swift; sourceTree = "<group>"; };
+		9703E5D12A14C6F60044146E /* PhotoListSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListSectionController.swift; sourceTree = "<group>"; };
+		9703E5D42A15CF550044146E /* AlbumListSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListSectionController.swift; sourceTree = "<group>"; };
+		97E4AB072A13787C00AF8821 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9F37EE612A0B828C00167851 /* IGListKit-POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGListKit-POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F37EE642A0B828C00167851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F37EE662A0B828C00167851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,13 +54,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E4AB022A133A3300AF8821 /* IGListDiffKit in Frameworks */,
+				97E4AB042A133A3300AF8821 /* IGListKit in Frameworks */,
 				9F9A3C8E2A0DBEE900012D6B /* Nuke in Frameworks */,
+				97E4AB062A133A3300AF8821 /* IGListSwiftKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9703E5D32A15CEED0044146E /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				9703E5D42A15CF550044146E /* AlbumListSectionController.swift */,
+				9703E5D12A14C6F60044146E /* PhotoListSectionController.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
 		9F37EE582A0B828C00167851 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +107,7 @@
 		9F37EE7A2A0B84A600167851 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				97E4AB072A13787C00AF8821 /* MainViewController.swift */,
 				9F37EE802A0B984F00167851 /* PhotoList */,
 			);
 			path = Features;
@@ -103,7 +127,9 @@
 			children = (
 				9F37EE782A0B849600167851 /* PhotoListViewModel.swift */,
 				9F37EE682A0B828C00167851 /* PhotoListViewController.swift */,
+				9703E5CF2A14BB7D0044146E /* PhotoIGListViewController.swift */,
 				9F37EE812A0B990300167851 /* PhotoListView.swift */,
+				9703E5D32A15CEED0044146E /* Sections */,
 				9FC298682A0C7D9200F2C37E /* Cells */,
 			);
 			path = PhotoList;
@@ -136,6 +162,9 @@
 			name = "IGListKit-POC";
 			packageProductDependencies = (
 				9F9A3C8D2A0DBEE900012D6B /* Nuke */,
+				97E4AB012A133A3300AF8821 /* IGListDiffKit */,
+				97E4AB032A133A3300AF8821 /* IGListKit */,
+				97E4AB052A133A3300AF8821 /* IGListSwiftKit */,
 			);
 			productName = "IGListKit-POC";
 			productReference = 9F37EE612A0B828C00167851 /* IGListKit-POC.app */;
@@ -167,6 +196,7 @@
 			mainGroup = 9F37EE582A0B828C00167851;
 			packageReferences = (
 				9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */,
+				97E4AB002A133A3300AF8821 /* XCRemoteSwiftPackageReference "IGListKit" */,
 			);
 			productRefGroup = 9F37EE622A0B828C00167851 /* Products */;
 			projectDirPath = "";
@@ -194,15 +224,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9703E5D22A14C6F60044146E /* PhotoListSectionController.swift in Sources */,
 				9F37EE692A0B828C00167851 /* PhotoListViewController.swift in Sources */,
+				9703E5D52A15CF550044146E /* AlbumListSectionController.swift in Sources */,
 				9FC2986A2A0C7DAC00F2C37E /* AlbumCollectionCell.swift in Sources */,
 				9F37EE792A0B849600167851 /* PhotoListViewModel.swift in Sources */,
 				9FC2986F2A0C8E3F00F2C37E /* PhotoCollectionCell.swift in Sources */,
 				9F37EE652A0B828C00167851 /* AppDelegate.swift in Sources */,
 				9F37EE822A0B990300167851 /* PhotoListView.swift in Sources */,
+				9703E5D02A14BB7D0044146E /* PhotoIGListViewController.swift in Sources */,
 				9F37EE672A0B828C00167851 /* SceneDelegate.swift in Sources */,
 				9F37EE7D2A0B84C300167851 /* Photo.swift in Sources */,
 				9F37EE7F2A0B92A600167851 /* Album.swift in Sources */,
+				97E4AB082A13787C00AF8821 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +452,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		97E4AB002A133A3300AF8821 /* XCRemoteSwiftPackageReference "IGListKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Instagram/IGListKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
@@ -429,6 +471,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		97E4AB012A133A3300AF8821 /* IGListDiffKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E4AB002A133A3300AF8821 /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListDiffKit;
+		};
+		97E4AB032A133A3300AF8821 /* IGListKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E4AB002A133A3300AF8821 /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListKit;
+		};
+		97E4AB052A133A3300AF8821 /* IGListSwiftKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E4AB002A133A3300AF8821 /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListSwiftKit;
+		};
 		9F9A3C8D2A0DBEE900012D6B /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9F9A3C8C2A0DBEE900012D6B /* XCRemoteSwiftPackageReference "Nuke" */;

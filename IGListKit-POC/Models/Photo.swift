@@ -5,10 +5,16 @@
 //  Created by John Harold Rasco on 5/10/23.
 //
 
-import Foundation
+import IGListKit
 
-struct Photo {
+class Photo {
+//  private let identifier: String = UUID().uuidString
+
   var imageURL: URL
+
+  init(imageURL: URL) {
+    self.imageURL = imageURL
+  }
 }
 
 extension Photo {
@@ -26,3 +32,16 @@ extension Photo {
     return photos
   }
 }
+
+//extension Photo: ListDiffable {
+//  func diffIdentifier() -> NSObjectProtocol {
+//    return identifier as NSString
+//  }
+//
+//  func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+//    guard let object = object as? Photo else {
+//      return false
+//    }
+//    return self.identifier == object.identifier
+//  }
+//}
