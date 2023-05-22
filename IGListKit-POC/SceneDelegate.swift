@@ -16,8 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 
   private func setUpRootViewController(windowScene: UIWindowScene) {
-    let photoListViewController = PhotoIGListViewController(viewModel: PhotoListViewModel())
-    let navigationController = UINavigationController(rootViewController: photoListViewController)
+    let navigationController = UINavigationController(rootViewController: MainViewController())
 
     let window = UIWindow(windowScene: windowScene)
     window.rootViewController = navigationController
